@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+</head>
+<body id="body2">
+<!-- navbar -->
+    <my-ownnavbar></my-ownnavbar>
+    
+<!-- el boton para agregar imagenes -->
+    <myimage-uploader></myimage-uploader>
+
+    <!-- Muestra de informacion -->
+    <div id="container-images" class="container">
+        <div class="section">
+            <!-- el saludo al usuario -->
+            <user-greeting></user-greeting>
+
+            <!-- Muestra el loader de cada una de las imagenes -->
+            <spinner-loader></spinner-loader>
+            <!-- muestra las imagenes -->
+            <myimage-gallery></myimage-gallery>
+        </div>
+    </div>
+
+    <my-footer></my-footer>
+
+    <!-- script para el index.html -->
+    <script>
+        const userId = localStorage.getItem("user_id");
+        if (!userId){
+            window.location.href = 'login.html'
+        }
+    </script>
+    <script type="module" src="./components/navbar.js"></script>
+    <script type="module" src="./components/welcomeGreeting.js"></script>
+    <script type="module" src="./components/spinnerloader.js"></script>
+    <script type="module" src="./components/imageGallery.js"></script>
+    <script type="module" src="./components/imageUploader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="module" src="JavaScript/home/main.js"></script>
+    <script src="JavaScript/auth/logout.js"></script>
+    <script type="module" src="./components/footer.js"></script>
+</body>
+</html>

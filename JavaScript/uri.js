@@ -1,0 +1,1 @@
+export const URI = 'https://backend-mygallery-py-js.onrender.com';
