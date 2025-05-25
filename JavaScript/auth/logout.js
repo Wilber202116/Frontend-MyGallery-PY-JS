@@ -3,6 +3,6 @@ document.addEventListener('DOMContentLoaded', () =>{
 
     btnlogout.addEventListener("click", () => {
         localStorage.removeItem("user_id");
-        window.location.href = 'login.html';
+        window.location.href = '/login.html';
     });
 });
