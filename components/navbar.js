@@ -9,6 +9,7 @@ class Navbar extends HTMLElement {
             <ul class="right">
                 <li id="li-general"><a id="btn-general">Galeria general</a></li>
                 <li id="li-pictures"><a id="btn-mypictures">Mi galeria</a></li>
+                <li id="li-Profile"><a id="btn-MyProfile">Mi perfil</a></li>
                 <li id="li-logout">
                     <a id="btn-logout" class="blue-text text-lighten-5">Cerrar sesion</a>
                 </li>
