@@ -12,7 +12,7 @@ window.addEventListener("load", () =>{
 
         loader.style.display = 'block'
         //console.log(username, password)
-        setTimeout(() => {
+        //setTimeout(() => {
                 // union entre JS y PYTHON
             fetch(`${URI}/api/login`, {
                 method: 'POST',
@@ -48,7 +48,7 @@ window.addEventListener("load", () =>{
                     classes: "red"
                 });
             });
-        }, 2000);
+        //}, 2000);
         
     });
 });
